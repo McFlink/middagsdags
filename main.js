@@ -41,7 +41,7 @@ const dinnerApp = Vue.createApp({
                             
                             setTimeout(() => {
                                 this.buttonText = "Wow vad gott med " + this.dinners[this.currentDinner].title + "!";
-                                this.changeColor = "true";
+                                this.changeColor = !this.changeColor;
                             }, 500);
                         });
                     }
