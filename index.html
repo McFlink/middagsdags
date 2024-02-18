@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Time!</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Middagsgenerator!</h1>
+    </header>
+    <main>
+        <p class="intro">Bråka inte över maten idag! Kör denna maträtts-generator för husfridens skull!</p>
+        <div id="dinner">
+            <button @click="generateDinner" :class="{ 'custom-button': changeColor }" :style="{ backgroundColor}">{{ buttonText }}</button>
+            <div v-if="currentDinner !== null" class="dinner-animation">{{ dinners[currentDinner].title }}</div>
+        </div>
+    </main>
+    <footer>
+        <p>© McFlink 2024</p>
+    </footer>
+</body>
+
+</html>
