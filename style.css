@@ -105,9 +105,6 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-    h1 {
-        font-size: 30px;
-    }
 
     .intro {
         text-align: center;
@@ -116,4 +113,61 @@ footer {
     footer {
         height: 80px;
     }
+}
+
+@media screen and (max-width: 615px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .intro {
+        margin: 20px;
+    }
+
+    button {
+        max-width: 300px;
+        font-size: 20px;
+        font-weight: normal;
+        margin-top: 40px;
+    }
+
+    .custom-button {
+        min-width: 300px;
+        font-size: 20px;
+        font-weight: normal;
+        margin-top: 40px;
+
+    }
+
+    .dinner-animation {
+        min-width: 300px;
+        font-size: 20px;
+        margin-bottom: 90px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        margin-top: 20px;
+    }
+
+    footer a {
+        margin-top: 5px;
+    }
+
 }
